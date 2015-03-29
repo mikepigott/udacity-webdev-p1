@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -42,19 +44,70 @@
       <!-- Project List -->
       <div class="row text-center">
         <div class="col-md-4">
-          <img class="img-responsive" src="img/east_gardens.jpg" alt="Eastern Gardens of Japan's Imperial Palace">
+          <img class="img-responsive" src="img/east_gardens.jpg" alt="Eastern Gardens of Japan's Imperial Palace" data-toggle="modal" data-target="#project1">
           <h3 class="text-uppercase">XML-to-Avro</h3>
           <p><a href="https://github.com/mikepigott/xml-to-avro">https://github.com/mikepigott/xml-to-avro</a></p>
         </div>
         <div class="col-md-4">
-          <img class="img-responsive" src="img/mt_fugi.jpg" alt="Mt. Fuji">
+          <img class="img-responsive" src="img/mt_fugi.jpg" alt="Mt. Fuji" data-toggle="modal" data-target="#project2">
           <h3 class="text-uppercase">FlashSort</h3>
           <p><a href="https://github.com/mikepigott/flashsort">https://github.com/mikepigott/flashsort</a></p>
         </div>
         <div class="col-md-4">
-          <img class="img-responsive" src="img/golden_gate.jpg" alt="Golden Gate Bridge">
+          <img class="img-responsive" src="img/golden_gate.jpg" alt="Golden Gate Bridge" data-toggle="modal" data-target="#project3">
           <h3 class="text-uppercase">Sudoku</h3>
           <p><a href="https://github.com/mikepigott/sudoku">https://github.com/mikepigott/sudoku</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Modal: Project 1 -->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="project1Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="project1Label">XML-to-Avro</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" alt="Eastern Gardens of Japan's Imperial Palace" src="img/east_gardens.jpg">
+            This code converts XML documents to Avro documents, and back.  It is submitted for review and approval to the Avro project under <a href="https://issues.apache.org/jira/browse/AVRO-457">AVRO-457</a>.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal: Project 2 -->
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="project2Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="project2Label">FlashSort</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" alt="Mt. Fuji" src="img/mt_fugi.jpg">
+            This is an implementation of a more-advanced sorting algorithm, Flash Sort.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal: Project 3 -->
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="project3Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="project3Label">Sudoku</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" alt="Golden Gate Bridge" src="img/golden_gate.jpg">
+            This is a brute-force solver for Sudoku puzzles.  Given a board with pre-defined entries, the solver will attempt all available combinations until one solves the puzzle.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
     </div>
